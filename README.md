@@ -10,6 +10,7 @@
 
 ## Used tools
 * Created and tested on Terraform v1.5.0 (linux) (as was instructed in the task)
+* the hcloud (hetzner) cloud provider version 1.40.0
 
 
 ## How to run it
