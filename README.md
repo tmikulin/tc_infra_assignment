@@ -15,6 +15,7 @@
 
 ## How to run it
 * update the ssh key path in the terraform.tfvars file
+* add the desired public IP in the firewall.ft file (I removed my own that I used) 
 * use the hcloud token when running the cli
   terraform apply -var hcloud_token="token"
 

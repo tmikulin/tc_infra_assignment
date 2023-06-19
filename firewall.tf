@@ -5,7 +5,7 @@ resource "hcloud_firewall" "internal_testing" {
   rule {
     direction  = "in"
     protocol   = "tcp"
-    source_ips = ["18.158.69.72/32", "188.252.197.127/32"]
+    source_ips = ["18.158.69.72/32"]
     port       = "80"
   }
 }
