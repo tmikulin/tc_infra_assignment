@@ -3,7 +3,6 @@ users:
   - name: root
     sudo: ALL=(ALL) NOPASSWD:ALL
     shell: /bin/bash
-    ssh-rsa: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDEnD5cXzTNQWxmPixbhJ3Ut4J5V7PTaAOfAQhiw2qdvVbrOPnCyzfUYJIz+SstmnrQLwhkQHWahNMFj5C10mHuM1XG+BFQLk7GDhUOkuvdsIIhIkQ4UW3tHvPsrnOWwpfJZTH6erI74iV8JTliI8FgEGrnZ21AOdaGr5a3/ubWH7CJgypmPpC/JZc8Rrt6cOwcZum3VmXjMDnl6hxowecKEgLeekd+ZI0ZcdpPj552i+0P5OjUhjbgpei9knv2YqJqIwDUp6NNmQCmVqRAfjzjCRUVEi/yCH4tRabCoqKHrs6NCYpHFmOp31xt0aBLKKCc2BNAl1Pr190NKIKZcmua75QhfH+qvqmUob/fm7iaAJ+FKfq6dUWfF+AFS8fjWNo28ziYYQgbRquF6pVps912+rj2fIVz1fzFHeP17C/ERFluhtyhrOriLUOOhrJB2+Io+NM9RWl3z3qCbKHBKpzt8EMv0kPLlwkYCt1FQHarx+olbMSPyTu0UEdZLAGjL78UIPGf4Ks+rurOOjbBW5WoW3IVnFRhekAJqT1axo96ClChENQ7WnuZ5es5MxLHMYEgrdCRaDho8UYhKy/6nQrYcEbeALGQdxYp8ZD4uA3+n/1eqTxySLa1JaPdNoNBb0R38OOIjZPqc0jUD62ZqCZxPPCponna9GFxM4OWfTooYQ== tmikulin@gmail.com
 package_update: true
 package_upgrade: true
 packages:

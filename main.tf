@@ -12,6 +12,12 @@ provider "hcloud" {
   token = var.hcloud_token
 }
 
+# the shared public key
+resource "hcloud_ssh_key" "default" {
+  name       = "shared public key"
+  public_key = file("~/.ssh/id_rsa.pub")
+}
+
 # create a linked primary ip for the server
 resource "hcloud_primary_ip" "internal_testing_ip" {
   name          = "internal_testing_ip"
@@ -31,6 +37,7 @@ resource "hcloud_server" "internal-testing" {
   image       = "ubuntu-22.04"
   server_type = "cx11"
   location    = "fsn1"
+  ssh_keys    = [hcloud_ssh_key.default.id]
   public_net {
     ipv4_enabled = true
     ipv4         = hcloud_primary_ip.internal_testing_ip.id
