@@ -19,9 +19,9 @@ resource "hcloud_primary_ip" "internal_testing_ip" {
   type          = "ipv4"
   assignee_type = "server"
   auto_delete   = true
-    labels = {
-      "ip" : "internal_testing"
-    }
+  labels = {
+    "ip" : "internal_testing"
+  }
 }
 
 
@@ -33,11 +33,11 @@ resource "hcloud_server" "internal-testing" {
   location    = "fsn1"
   public_net {
     ipv4_enabled = true
-	ipv4 = hcloud_primary_ip.internal_testing_ip.id
+    ipv4         = hcloud_primary_ip.internal_testing_ip.id
     ipv6_enabled = false
   }
   firewall_ids = [hcloud_firewall.internal_testing.id]
-  user_data = file("user_data.yml")
+  user_data    = file("user_data.yml")
 }
 
 
